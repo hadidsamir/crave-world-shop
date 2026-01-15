@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        display: ["Fredoka", "sans-serif"],
+        body: ["Quicksand", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -56,6 +60,13 @@ export default {
           "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
+        },
+        candy: {
+          pink: "hsl(var(--candy-pink))",
+          fuchsia: "hsl(var(--candy-fuchsia))",
+          mint: "hsl(var(--candy-mint))",
+          yellow: "hsl(var(--candy-yellow))",
+          orange: "hsl(var(--candy-orange))",
         },
       },
       borderRadius: {
