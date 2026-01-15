@@ -88,7 +88,7 @@ export const CartDrawer = () => {
                           <p className="text-xs text-muted-foreground">{item.variantTitle}</p>
                         )}
                         <p className="font-bold text-primary mt-1">
-                          ${parseFloat(item.price.amount).toFixed(2)} MXN
+                          ${parseFloat(item.price.amount).toLocaleString('es-CO', { minimumFractionDigits: 0, maximumFractionDigits: 0 })} COP
                         </p>
                       </div>
                       
@@ -131,7 +131,7 @@ export const CartDrawer = () => {
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-semibold">Total</span>
                   <span className="text-xl font-bold text-primary">
-                    ${totalPrice.toFixed(2)} MXN
+                    ${totalPrice.toLocaleString('es-CO', { minimumFractionDigits: 0, maximumFractionDigits: 0 })} COP
                   </span>
                 </div>
                 
