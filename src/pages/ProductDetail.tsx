@@ -141,8 +141,8 @@ const ProductDetail = () => {
                 {product.title}
               </h1>
               <p className="text-2xl font-bold text-primary">
-                ${parseFloat(selectedVariant?.price.amount || "0").toFixed(2)}
-                <span className="text-base text-muted-foreground ml-1">MXN</span>
+                ${parseFloat(selectedVariant?.price.amount || "0").toLocaleString('es-CO', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}
+                <span className="text-base text-muted-foreground ml-1">COP</span>
               </p>
             </div>
 

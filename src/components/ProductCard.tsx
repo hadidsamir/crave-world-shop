@@ -67,8 +67,8 @@ export const ProductCard = ({ product }: ProductCardProps) => {
           
           <div className="flex items-center justify-between">
             <span className="text-xl font-bold text-primary">
-              ${parseFloat(price.amount).toFixed(2)}
-              <span className="text-xs text-muted-foreground ml-1">MXN</span>
+              ${parseFloat(price.amount).toLocaleString('es-CO', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}
+              <span className="text-xs text-muted-foreground ml-1">COP</span>
             </span>
             
             <Button
