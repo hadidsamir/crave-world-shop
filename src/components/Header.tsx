@@ -25,9 +25,16 @@ export const Header = () => {
           <Link to="/" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
             Inicio
           </Link>
-          <Link to="/#productos" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+          <a 
+            href="#productos" 
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('productos')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors cursor-pointer"
+          >
             Productos
-          </Link>
+          </a>
         </nav>
 
         <CartDrawer />
