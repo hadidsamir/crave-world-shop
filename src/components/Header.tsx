@@ -31,6 +31,9 @@ export const Header = () => {
           >
             Productos
           </a>
+          <Link to="/contacto" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+            Contacto
+          </Link>
         </nav>
 
         <CartDrawer />
