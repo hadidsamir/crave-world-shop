@@ -48,7 +48,7 @@ export const HeroSection = () => {
             <span className="text-primary">antojos</span>
           </h1>
           
-          <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground mb-16 max-w-xl mx-auto">
             Descubre los dulces más deliciosos y coloridos. Gomitas, chocolates, paletas y mucho más. ¡Tu felicidad dulce te espera!
           </p>
           
